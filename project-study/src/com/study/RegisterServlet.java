@@ -1,11 +1,11 @@
 package com.study;
 
-import jakarta.servlet.ServletOutputStream;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import net.sf.json.JSONObject;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 
@@ -23,19 +23,19 @@ public class RegisterServlet extends HttpServlet {
         resp.setHeader("Access-Control-Allow-Origin", "*");
         resp.setHeader("Access-Control-Allow-Methods", "GET,POST");
 
-        JSONObject jsonIn = JSONReader.receivePost(req);
-        JSONObject jsonOut = new JSONObject();
+        ObjectMapper OM = new ObjectMapper();
+        LoginBean jsonIn = OM.readValue(JSONReader.receivePost(req), LoginBean.class);
         ServletOutputStream out = resp.getOutputStream();
 
-        String username = jsonIn.getString("username");
-        String password = jsonIn.getString("password");
+        String username = jsonIn.getUsername();
+        String password = jsonIn.getPassword();
 
         Connection conn = SQLconn.conn();
         String res = Login.register(conn, username, password);
         SQLconn.disconn(conn);
 
-        jsonOut.put("message", res);
-        out.print(jsonOut.toString());
+        MessageBean jsonOut = new MessageBean(res);
+        out.print(OM.writeValueAsString(jsonOut));
     }
 
     public RegisterServlet() {
