@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .register{
+            background: linear-gradient(200deg,#e0b2d6,#e2c3fc);
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+            border-radius: 20px;
+            display: flex;
+            align-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .register p{
+            text-align: center;
+        }
+        .register div{
+            text-align: center;
+        }
+        .button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            border-width: 1px;
+            margin-left:10px;
+            margin-right:10px;
+        }
+        .password{
+            
+            border-radius: 7px;
+            border-width: 1px;
+            height: 30px;
+            width: 200px;
+            outline: none;
+        }
+        .name{
+            border-radius: 7px;
+            border-width: 1px;
+            height: 30px;
+            width: 200px;
+            outline: none;
+        }
+        .English{
+            font-size:x-large;
+            font-weight: 500;
+        }
+        .Chinese{
+            font-size:large;
+        }
+        .rpwd{
+           
+            color: crimson;
+            margin-top:15px;
+        }
+        .button1{
+            margin-bottom: 20px;
+          
+        }
+        .yy{
+            margin-top: 30px;
+        }
+        .zw{
+            margin-top: 10px;
+        }
+        .textbox{
+            margin-top: 15px;
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="register">
+        <div class="box">
+            <div class="yy"> <p class="English">  welcome to family study!</p> </div>
+            <div class="zw"> <p class="Chinese">欢迎来到家庭书房！</p>  </div>
+            <div class="textbox" id="username">
+                <b> 用 户 名： &nbsp;</b><input type="text" id="name" name="name" class="name">
+            </div>
+            <div class="textbox" id="pwd">
+                <b> 密&nbsp;&nbsp;码：&nbsp; </b>  &nbsp;&nbsp;&nbsp; <input type="password" id="password" name="pwd" class="password" id="password">
+            </div>
+            <div class="textbox" id="repwd">
+                <b> 确认密码：&nbsp;</b> <input type="password" name="repwd" class="password" id="repsword">
+            </div>
+    
+            <div class="rpwd" name="msg"> </div>
+
+        </div>
+        <div class="button1">
+            <input type="submit" value="注册" class="button" id="register" onclick="register()" >
+            
+            <a href="../index.html"><input type="button" value="返回" class="button"> </a>
+        </div>
+    </div>
+    
+</body>
+
+
+
+</html>
+
+<script src="../ajax-request/jquery-1.12.4.min.js"></script>
+<script src="../ajax-request/submit.js"></script>

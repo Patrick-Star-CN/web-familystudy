@@ -11,7 +11,7 @@ public class SQLconn {
         String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/study";
         String user = "root";
-        String password = "cxcxcx4,";
+        String password = "root";
         Connection conn = null;
         try{
             Class.forName(driver);

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            font-size: larger;
+            font-weight: 600;
+        }
+        .pay{
+            font-size: larger;
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+
+        .cancel{
+            font-size:larger;
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div>欢迎购买会员服务,请扫码付款</div>
+    <br><br><br><br>
+    
+    <img src="../web familystudy/picture/二维码.jpg" width="200" alt="">
+    <br>
+    <br>
+
+    <input type="button" value="付款" class="pay" onclick="pay()">
+    &nbsp;&nbsp;
+    <a href="../web familystudy/readingGuides.html"><input type="button" value="取消" class="cancel"></a>
+</body>
+</html>
+
+<script src="../ajax-request/submit.js"></script>

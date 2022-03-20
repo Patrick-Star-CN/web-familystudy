@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>构建家庭书房服务</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(245, 245, 245);
+            font-size: larger;
+        }
+        h1{
+            color:blue;
+        }
+        .button{
+            border-radius: 5px;
+            border-width: 1px;
+            width: 80px;
+            height:40px;
+        }
+        .text{
+            border-radius: 5px;
+            border-width:1px;
+            width:300px;
+            height:30px;
+        }
+        #lab{
+            width: 30px;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+        .box{
+            height: 50px;
+            
+            border-top: 3px solid rgb(21, 35, 230);
+            border-bottom: 1px solid skyblue;
+        }
+        .box a{
+            width:80px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+            color: black;
+            text-decoration:none;
+        }
+        .box a:hover{
+            background-color: aliceblue;
+            color: blue;
+        }
+        .listening{
+            width: 1000px;
+            margin:0 auto;
+            background-color: rgb(231, 253, 246);
+        }
+    </style>
+</head>
+
+
+    <div class="listening">
+        <div class="box">
+            <a href="../index.html">首页</a> &nbsp; &nbsp; 
+            <a href="../web familystudy/studyConstruction.html">构建家庭书房</a> &nbsp; &nbsp;
+            <a href="../web familystudy/booksSorting.html">家庭藏书专业编目整理</a> &nbsp; &nbsp;
+            <a href="../web familystudy/booksListening.html">好书畅听服务</a> &nbsp; &nbsp;
+            <a href="../web familystudy/readingGuides.html">青少年专业阅读指导</a> &nbsp; &nbsp;
+        </div>
+        <div>
+            <h1>构建家庭书房服务</h1>
+            <hr>
+            是否有书架：<input type="radio" name="书架" >是
+            <input type="radio" name="书架" >否
+            <br><br>
+            书架选择：
+            <input type="radio" name="1" id="wood">   <label for="wood">木质</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="1" id="steel">   <label for="steel">钢制</label>
+            
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="wood"><img src="../web familystudy/picture/wood.jpg" alt="" width="100"></label>
+            &nbsp;&nbsp;&nbsp;
+            <label for="steel"><img src="../web familystudy/picture/steel.jpg" alt="" width="100"></label>
+            <br>
+
+            书架颜色：
+            <input type="radio" name="2" >白色
+            <input type="radio" name="2" >黄色
+            <input type="radio" name="2" >黑色
+            <br><br>
+            需要几本书？
+            <select name="书" id="">
+                <option>10册</option>
+                <option>10~20册</option>
+                <option>20~50册</option>
+                <option>50~100册</option>
+            </select>
+            
+            <br><br>书的类别
+            文学类<input type="checkbox" 0>
+            历史类<input type="checkbox" >
+            科技类<input type="checkbox" >
+            金融类<input type="checkbox" >
+            政治类<input type="checkbox" >
+            英语类<input type="checkbox" >
+            工具书类<input type="checkbox" >
+            <br>
+            
+            
+                册数：   &nbsp;&nbsp;&nbsp;
+            <input type="text" id="lab" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lab">&nbsp;
+        
+            <br><br>
+            您的家庭住址: <input type="text" class="text">
+            <br><br>
+            您的昵称: <input type="text" class="text">
+            <br><br>
+            您的邮箱: <input type="text" class="text">
+            <br><br>
+            联系方式: <input type="text" class="text">
+            <br><br>
+            上门日期: <input type="date" name="" id="" class="text">
+            <br><br>
+            <input type="button" value="确定" class="button">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="../index.html"> <input type="button"  value="返回" class="button"></a>
+        </div>
+    </div>
+</body>
+</html>

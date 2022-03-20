@@ -20,4 +20,13 @@
         <servlet-name>Register</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TestCookie</servlet-name>
+        <servlet-class>com.study.TestCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestCookie</servlet-name>
+        <url-pattern>/testcookie</url-pattern>
+    </servlet-mapping>
 </web-app>

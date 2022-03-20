@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login{
+            background: linear-gradient(200deg,#72afd3,#96fbc4);
+            width: 400px;
+            height: 500px;
+            margin:0 auto;
+            display: flex;
+            border-radius: 20px;
+            align-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .login p{
+            text-align: center;
+        }
+        .login div{
+            text-align: center;
+        }
+        .button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            border-width: 1px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        .password{
+            
+            border-radius: 7px;
+            border-width: 1px;
+            height: 30px;
+            width: 200px;
+            outline: none;
+        }
+        .English{
+            font-size:x-large;
+            font-weight: 500;
+        }
+        .Chinese{
+            font-size:large;
+        }
+        body{
+          
+            background-size: 1300px;
+            
+        }
+        .yy{
+            margin-top: 40px;
+        }
+        .zw{
+            margin-top:40px;
+        }
+        .textbox{
+            margin-top: 50px;
+        }
+        .button1{
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="box"> 
+            <div class="yy"> <p class="English">welcome to family study!</p> </div>
+            <div class="zw"> <p class="Chinese">欢迎来到家庭书房！</p> </div>
+            <div class="textbox" id="username">
+                <b> 用户名：</b><input type="text" name="用户名" id="name" class="password">
+            </div>
+            <div class="textbox" id="pwd">
+                <b> 密码：</b> &nbsp;&nbsp;&nbsp;<input type="password" name="密码" id="password" class="password">
+            </div>     
+        </div>   
+        
+        <div class="button1">       
+            <input type="submit" value="登录" class="button" id="login" onclick="login()">
+            <a href="../index.html"><input type="button" value="返回" class="button"> </a>
+        </div>
+        
+    </div>
+
+</body>
+</html>
+
+<script src="../ajax-request/jquery-1.12.4.min.js"></script>
+<script src="../ajax-request/submit.js"></script>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到家庭“悦”读书房官网</title>
+    <style>
+        .color{
+            font-size:45px;
+            font-style: italic;
+            color:rgb(39, 25, 236);
+            font-weight: 700;
+        }
+        .color1{
+            font-size:70px;
+            color:crimson;
+        }
+        .smalltitle a{
+            text-decoration: none;
+            border: 1px solid rgb(19, 146, 231);
+            border-radius: 10px;
+            color:black;
+            font-size: 22px;
+            margin: 0 auto;
+        }
+        .p1{
+            background-color: rgb(253, 244, 229);
+         
+        
+        }
+        .p1:hover{
+            background-color: rgb(253, 244, 229);
+            color: rgb(255, 0, 0);
+        }
+        .p2{
+            background-color: rgb(236, 252, 225);
+           
+        }
+        .p2:hover{
+            background-color: rgb(253, 244, 229);
+            color: rgb(119, 221, 88);
+        }
+        .p3{
+            background-color: rgb(226, 244, 253);
+          
+        }
+        .p3:hover{
+            background-color: rgb(226, 244, 253);
+            color: rgb(5, 134, 255);
+        }
+        .p4{
+            background-color: rgb(253, 235, 248);
+        }
+        .p4:hover{
+            background-color: rgb(253, 235, 248);
+            color: rgb(255, 6, 255);
+        }
+        h1{
+            text-align: center;
+        } 
+        h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        p{
+            text-indent: 2em;
+        }
+    
+        .title{
+            text-align: center;
+        }
+        .smalltitle{
+            text-align: center;
+            font-size: 22px;
+           
+        }
+        div{
+            width: 500;
+        }
+        .image{
+            text-align: center;
+        }
+        table{
+            margin:0 auto;
+        }
+       
+        .picture1{
+            margin-top:-60px;
+        }
+      
+        .button{
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            border-width: 1px;  
+        }
+         
+        .arrow1{
+            width:0;
+            height: 0;
+            border: 40px solid transparent;
+            border-left-color:aqua;
+            margin-left: 30px;
+            margin-bottom: -52.5px;
+           
+        }
+        .arrow2{
+            width:0;
+            height: 0;
+            border: 15px solid transparent;
+            border-color:aqua;
+          
+        }
+        .arrow{
+            margin-left:400px ;
+            margin-top: -200px;
+        }
+        .framework{
+            margin: 0 auto;
+            width: 1000px;
+            background:linear-gradient(200deg,rgb(255, 255, 241),rgb(247, 255, 234)) 
+        }
+        .introduction{
+            text-align: center;
+            margin-top:30px;
+        }
+        .context1{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .navigate{
+            width: 800px;
+            margin:0 auto;
+            margin-top: 30px;
+        }
+      
+       
+        .image3{
+            margin-left: 500px;
+            margin-top:-400px;
+        }
+        .intro{
+            margin-top: 250px;
+        }
+        .context{
+            font-size: 20px;
+        }
+        .table{
+            font-size: 18px;
+        }
+        .friendship{
+            margin-top: 30px;
+            text-align: center;
+            font-weight: 700;
+            font-size: large;
+        }
+        .connection{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .picture2{
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .picture3{
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .user{
+            text-align: right;
+            margin-right: 100px;
+        }
+       
+        .buttonbox{
+            display: flex;
+            justify-content: center;
+        }
+        .top{
+            margin-top:40px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            /* align-content: space-around;
+            justify-content: space-between; */
+            
+        }
+        .seal{
+            margin-left:100px;
+        }
+        .book{
+            margin-left:80px;
+        }
+        .top2{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-evenly;
+            margin-left:200px;
+        }
+        #login{
+            margin-right:20px;
+        }
+        .user{
+            font-size: larger;
+            font-style: italic;
+            font-weight: 500;
+        }
+        
+    </style>
+</head>
+<body onload="load()">
+<div class="framework">
+    <hr>
+    <div class="title">
+        <span class="color">欢迎来到家庭</span> 
+        <span class="color1">“悦”</span>
+        <span class="color">读书房!</span>
+    </div>
+
+    <div class="top">
+        
+        <div class="seal">
+            <img src="./web familystudy/picture/books2.jpg" alt="" width="150" >
+        </div>
+        <div class="book">
+            <img src="./web familystudy/picture/书.jpg" alt="" width="150">
+        </div>
+        <div class="top2">
+            <div class="user" id="tips" >请登录网站</div>
+            <div class="buttonbox">
+                <a href="./web familystudy/login.html"><input type="button" value="登录" class="button" id="login"></a>
+                <a href="./web familystudy/register.html"><input type="button" value="注册" class="button" id="register"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navigate">
+        <p class="smalltitle">
+            <a href="./web familystudy/studyConstruction.html" class="p1">构建家庭书房服务  </a>
+            <a href="./web familystudy/booksSorting.html" class="p2">家庭藏书专业编目整理 </a>
+            <a href="./web familystudy/booksListening.html" class="p3">好书畅听服务 </a>
+            <a href="./web familystudy/readingGuides.html" class="p4">青少年专业阅读指导 </a>
+        </p>
+   
+    </div>
+    <hr>
+    <div class="image1">
+        <img src="./web familystudy/picture/picture3.jpg" alt="" width="300" height="300" class="picture3" >
+    </div>
+    
+    <div class="image2">
+        <img src="./web familystudy/picture/picture2.jpg" alt="" width="300" height="300" class="picture2" >
+    </div>
+
+    <div class="image3">
+        <img src="./web familystudy/picture/书房——浅颜色.jpg" alt="" width="500" class="picture1">
+    </div>
+
+    <div class="arrow">
+        <div class="arrow1"></div>
+        <div class="arrow2"></div>
+    </div>
+
+    <br><br><br>
+    <div class="intro"><h2>项目简介</h2></div>
+    <hr>
+    <div class="context1">
+    <p class="context"> 本项目主要面向广大青少年家庭，
+        旨在提供家庭书房的构建服务、家庭藏书专业编目分类整理、
+        青少年专业阅读指导、好书畅听四大服务。
+        左图右书——家庭“悦”读书房电子商务平台致力于家庭亲子阅读服务，集软件、技术、知识、能力为一体，满足个性化文化需求，将文化服务和消费电子商务化，是“全民阅读推广”和“教育双减”政策下形成的特色文化产业平台。
+    </p>
+    </div>
+
+    <hr>
+    <h3>收费标准</h3>
+    <div class="table">
+        <table border="1" width="600" height="400" >
+            <tr>
+                <td>类别</td>
+                <td>功能</td>
+                <td>价格</td>
+            </tr>
+            <tr>
+                <td>构建家庭书房</td>
+                <td>可选择不同款式的书架，上门建设书房</td>
+                <td>上门起步价：50元，构建实体书房单次500元，会员首次打5折</td>
+            </tr>
+            <tr>
+                <td>家庭藏书专业编目整理</td>
+                <td>对已有的数目进行编目整理</td>
+                <td>每本分编价3元，10本起编，起步价30元</td>
+            </tr>
+            <tr>
+                <td>青少年专业阅读指导</td>
+                <td>推荐名著，精选优秀小说</td>
+                <td>每年200元，实行会员制度</td>
+            </tr>
+            <tr>
+                <td>好书畅听服务</td>
+                <td>畅享有声读物，让耳朵沉浸在书海中</td>
+                <td>每年200元，实行会员制度</td>
+            </tr>
+        </table>
+    </div>
+    <div class="friendship">
+        友情链接
+    </div>
+    <div class="connection">
+        <a href="https://hk.jd.com/">京东官网</a>
+        <a href="https://world.taobao.com/">淘宝官网</a>
+    </div>
+
+    <div class="introduction">
+        Copyright © 2022 By 韩骁扬&蔡祥 &nbsp;&nbsp;&nbsp;&nbsp; 浙ICP备2022007249号
+    </div>
+</div>
+
+</body>
+
+
+<script src="../web-familystudy/ajax-request/jquery-1.12.4.min.js">
+   
+</script>
+<script src="../web-familystudy/ajax-request/submit.js"></script>
+<script type="text/javascript">
+    function load(){
+    var url=location.href;
+    // function user ()
+    //     {
+    //         query('tips').innerHTML = url;
+    //     }
+    var t=url.indexOf("?");
+    if (t>0)
+    {
+    var s=url.slice(t+1,url.length);
+    document.querySelector('#tips').innerHTML = "欢迎"+s+"登录成功";
+    
+    // $(document).ready(function(){
+    //     $("#login").css("display","none");
+    //     $("#register").css("display","none");
+    // });
+    document.getElementById('login').style.display="none";
+    document.getElementById('register').style.display="none";
+    }
+    }
+</script>
+<!-- <script type="text/javascript">
+    window.onload=function(){
+        load1();load2();
+    }
+</script> -->
+</html>

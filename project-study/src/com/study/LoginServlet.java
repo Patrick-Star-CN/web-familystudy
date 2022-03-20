@@ -3,6 +3,7 @@ package com.study;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.ServletOutputStream;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -32,6 +33,9 @@ public class LoginServlet extends HttpServlet {
 
         Connection conn = SQLconn.conn();
         String res = Login.login(conn, username, password);
+        Cookie cookie = new Cookie("name", username);
+        resp.addCookie(cookie);
+
         SQLconn.disconn(conn);
 
         MessageBean jsonOut = new MessageBean(res);
