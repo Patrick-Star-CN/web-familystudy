@@ -58,7 +58,7 @@ function pay(){
     window.location.href ="../web familystudy/readingGuides.html";
 }
 
-var url="http://101.43.175.190:8080";
+var url="http://127.0.0.1:8080";
 function submit(check){
     if (check==1){
     $.ajax({       //注册
